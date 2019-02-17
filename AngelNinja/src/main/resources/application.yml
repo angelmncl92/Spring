@@ -1,0 +1,26 @@
+#Spring properties
+spring:
+  aop:
+    auto: true
+    proxy-target-class: false
+  banner:
+    location: classpath:folderExample/banner.txt 
+  messages:
+    always-use-message-format: false
+    basename: messages
+    cache-seconds: -1
+  port: 8090  
+  mvc:
+    dispatch-trace-request: false
+    dispatch-options-request: true
+    couchbase:
+      bucket:
+        name: default
+        
+#Security properties
+security:
+  oauth2: 
+    resource:
+      prefer-token-info: true
+      service-id: resource
+       
